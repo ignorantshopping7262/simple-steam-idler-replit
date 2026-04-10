@@ -1,14 +1,17 @@
 services:
   - type: web
-    name: my-portfolio-app
+    name: simple-site-backend
     runtime: node
     plan: free
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: node index.js
     envVars:
       - key: ACCOUNT_NAME
-        value: your_real_steam_name
+        value: "YOUR_STEAM_LOGIN_NAME"
       - key: STEAM_SESSION_ID
-        value: your_session_id_here
+        value: "YOUR_SESSION_ID"
       - key: STEAM_LOGIN_SECURE
-        value: your_secure_login_here
+        value: "YOUR_LOGIN_SECURE"
       - key: APP_ID
         value: "730"
