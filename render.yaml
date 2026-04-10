@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: my-portfolio-app
+    runtime: node
+    plan: free
+    envVars:
+      - key: ACCOUNT_NAME
+        value: your_real_steam_name
+      - key: STEAM_SESSION_ID
+        value: your_session_id_here
+      - key: STEAM_LOGIN_SECURE
+        value: your_secure_login_here
+      - key: APP_ID
+        value: "730"
