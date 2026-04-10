@@ -1,14 +1,15 @@
 services:
   - type: web
-    name: simple-site-backend
+    name: steam-hours-site
     runtime: node
     plan: free
     region: frankfurt
+    repo: https://github.com/ignorantshopping7262/simple-steam-idler-replit
     buildCommand: npm install
     startCommand: node index.js
     envVars:
       - key: ACCOUNT_NAME
-        value: "YOUR_STEAM_LOGIN_NAME"
+        value: "YOUR_STEAM_LOGIN"
       - key: STEAM_SESSION_ID
         value: "YOUR_SESSION_ID"
       - key: STEAM_LOGIN_SECURE
